@@ -112,12 +112,14 @@ int main(){
     if (v2 == 'h') d2 = hexadecimal_decimal(s_second);
         else if (v2 == 'q') d2 = octal_decimal(s_second);
             else d2 = binary_decimal(s_second);
+//Caculate the value by op.
 cout << s_first << v1 <<" " << op << " "<< s_second << v2;
 if (op >= '+'&op <= '+') d1 = d1+d2;
     else
         if (op >= '-'&op <= '-') d1 = d1-d2;
             else d1 = d1*d2;
 char k;
+//now we show up the answer.
 for (; i < s_expression.length()-1 ;i++){
     k = s_expression[i+1];
     if (s_expression[i] = '?') {
